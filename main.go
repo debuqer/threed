@@ -5,4 +5,5 @@ func main() {
 	b := Point{1, 2, -4}
 
 	print(a.DistanceToPoint(b))
+	print(a.DistanceToCordination(1, 2, 3))
 }
