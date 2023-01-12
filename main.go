@@ -1,9 +1,14 @@
 package main
 
+import (
+	"fmt"
+	"strconv"
+)
+
 func main() {
 	a := Point{0, 0, 0}
-	b := Point{1, 1, 1}
+	b := Point{0, 0, 1}
 
-	print(a.DistanceToPoint(b))
-	print(a.DistanceToCordination(1, 2, 3))
+	s := strconv.FormatFloat(a.DistanceToPoint(b), 'f', 2, 64)
+	fmt.Println(s)
 }

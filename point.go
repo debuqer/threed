@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -12,7 +11,6 @@ type Point struct {
 }
 
 func (a *Point) DistanceToCordination(x float64, y float64, z float64) float64 {
-	fmt.Println(x, y, z)
 	return (math.Sqrt(math.Pow(a.X-x, 2) + math.Pow(a.Y-y, 2) + math.Pow(a.Z-z, 2)))
 }
 
